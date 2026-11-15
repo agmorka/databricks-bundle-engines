@@ -1,0 +1,31 @@
+bundle:
+  name: my-bundle
+
+include:
+  - ./resources/*.yml
+
+artifacts:
+  my_module:
+    type: whl
+    build: uv build
+    path: .
+
+# Two identical targets, one per deployment engine.
+# The engine is chosen per command:
+#   databricks bundle deploy -t tf
+#   $env:DATABRICKS_BUNDLE_ENGINE="direct"; databricks bundle deploy -t direct; Remove-Item Env:DATABRICKS_BUNDLE_ENGINE
+targets:
+  tf:
+    mode: development
+    default: true
+    workspace:
+      host: https://<your-workspace>.cloud.databricks.com/
+    presets:
+      name_prefix: "[tf ${workspace.current_user.short_name}] "
+
+  direct:
+    mode: development
+    workspace:
+      host: https://<your-workspace>.cloud.databricks.com/
+    presets:
+      name_prefix: "[direct ${workspace.current_user.short_name}] "
