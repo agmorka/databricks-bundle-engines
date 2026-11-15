@@ -1,0 +1,48 @@
+{
+ "state_version": 2,
+ "cli_version": "1.2.1",
+ "lineage": "f8d70e51-6737-4f31-9ce6-b23cb03659c6",
+ "serial": 1,
+ "state": {
+  "resources.jobs.my_job": {
+   "__id__": "684078964183664",
+   "state": {
+    "deployment": {
+     "kind": "BUNDLE",
+     "metadata_file_path": "/Workspace/Users/<your-email>/.bundle/my-bundle/direct/state/metadata.json"
+    },
+    "edit_mode": "UI_LOCKED",
+    "environments": [
+     {
+      "environment_key": "default",
+      "spec": {
+       "dependencies": [
+        "/Workspace/Users/<your-email>/.bundle/my-bundle/direct/artifacts/.internal/my_module-0.1.0-py2.py3-none-any.whl"
+       ],
+       "environment_version": "2"
+      }
+     }
+    ],
+    "format": "MULTI_TASK",
+    "max_concurrent_runs": 4,
+    "name": "[direct <your-user>] my_job",
+    "queue": {
+     "enabled": true
+    },
+    "tags": {
+     "dev": "<your-user>"
+    },
+    "tasks": [
+     {
+      "environment_key": "default",
+      "python_wheel_task": {
+       "entry_point": "hello",
+       "package_name": "my_module"
+      },
+      "task_key": "hello"
+     }
+    ]
+   }
+  }
+ }
+}
