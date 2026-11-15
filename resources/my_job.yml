@@ -4,7 +4,6 @@ resources:
       name: my_job
       tasks:
         - task_key: hello
-          retry_on_timeout: true
           environment_key: default
           python_wheel_task:
             package_name: my_module
