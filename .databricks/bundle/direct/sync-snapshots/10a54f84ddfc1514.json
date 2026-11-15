@@ -3,7 +3,6 @@
   "host": "https://<your-workspace>.cloud.databricks.com",
   "remote_path": "/Workspace/Users/<your-email>/.bundle/my-bundle/direct/files",
   "last_modified_times": {
-    ".wip/command-log.md": "2026-11-15T18:38:25.3628726+01:00",
     "databricks.yml": "2026-11-15T18:15:06.6966369+01:00",
     "pyproject.toml": "2026-10-31T13:59:12.3627203+01:00",
     "resources/my_job.yml": "2026-11-11T21:11:34.6612801+01:00",
@@ -11,7 +10,6 @@
     "src/my_module/hello.py": "2026-10-30T21:42:20.4074178+01:00"
   },
   "local_to_remote_names": {
-    ".wip/command-log.md": ".wip/command-log.md",
     "databricks.yml": "databricks.yml",
     "pyproject.toml": "pyproject.toml",
     "resources/my_job.yml": "resources/my_job.yml",
@@ -19,7 +17,6 @@
     "src/my_module/hello.py": "src/my_module/hello.py"
   },
   "remote_to_local_names": {
-    ".wip/command-log.md": ".wip/command-log.md",
     "databricks.yml": "databricks.yml",
     "pyproject.toml": "pyproject.toml",
     "resources/my_job.yml": "resources/my_job.yml",
