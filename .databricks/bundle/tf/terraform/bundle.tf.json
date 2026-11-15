@@ -47,8 +47,7 @@
             },
             "task_key": "hello"
           }
-        ],
-        "timeout_seconds": 3600
+        ]
       }
     }
   }
