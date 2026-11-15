@@ -5,7 +5,7 @@
   "last_modified_times": {
     "databricks.yml": "2026-11-15T18:15:06.6966369+01:00",
     "pyproject.toml": "2026-10-31T13:59:12.3627203+01:00",
-    "resources/my_job.yml": "2026-11-11T21:11:34.6612801+01:00",
+    "resources/my_job.yml": "2026-11-15T19:50:52.5137923+01:00",
     "src/my_module/__init__.py": "2026-10-31T14:19:35.6795487+01:00",
     "src/my_module/hello.py": "2026-10-30T21:42:20.4074178+01:00"
   },
