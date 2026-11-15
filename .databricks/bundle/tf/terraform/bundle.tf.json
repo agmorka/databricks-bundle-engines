@@ -45,7 +45,6 @@
               "entry_point": "hello",
               "package_name": "my_module"
             },
-            "retry_on_timeout": true,
             "task_key": "hello"
           }
         ]

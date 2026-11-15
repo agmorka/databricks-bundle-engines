@@ -2,7 +2,7 @@
  "state_version": 2,
  "cli_version": "1.2.1",
  "lineage": "f8d70e51-6737-4f31-9ce6-b23cb03659c6",
- "serial": 4,
+ "serial": 5,
  "state": {
   "resources.jobs.my_job": {
    "__id__": "684078964183664",
@@ -39,7 +39,6 @@
        "entry_point": "hello",
        "package_name": "my_module"
       },
-      "retry_on_timeout": true,
       "task_key": "hello"
      }
     ]
