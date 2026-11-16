@@ -1,0 +1,48 @@
+{
+ "state_version": 3,
+ "cli_version": "1.26.0",
+ "lineage": "c4610367-7e0b-b4f1-bbd1-8c041be831bc",
+ "serial": 9,
+ "state": {
+  "resources.jobs.my_job": {
+   "__id__": "295721443718387",
+   "state": {
+    "deployment": {
+     "kind": "BUNDLE",
+     "metadata_file_path": "/Workspace/Users/<your-email>/.bundle/my-bundle/tf/state/metadata.json"
+    },
+    "edit_mode": "UI_LOCKED",
+    "environments": [
+     {
+      "environment_key": "default",
+      "spec": {
+       "dependencies": [
+        "/Workspace/Users/<your-email>/.bundle/my-bundle/tf/artifacts/.internal/my_module-0.1.0-py2.py3-none-any.whl"
+       ],
+       "environment_version": "2"
+      }
+     }
+    ],
+    "format": "MULTI_TASK",
+    "max_concurrent_runs": 4,
+    "name": "[tf <your-user>] my_job",
+    "queue": {
+     "enabled": true
+    },
+    "tags": {
+     "dev": "<your-user>"
+    },
+    "tasks": [
+     {
+      "environment_key": "default",
+      "python_wheel_task": {
+       "entry_point": "hello",
+       "package_name": "my_module"
+      },
+      "task_key": "hello"
+     }
+    ]
+   }
+  }
+ }
+}
