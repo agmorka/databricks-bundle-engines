@@ -1,0 +1,12 @@
+# Build output, rebuilt on every deploy
+dist/
+
+# Downloaded by the Databricks CLI, not needed in the repo
+.databricks/bundle/*/bin/
+.databricks/bundle/*/terraform/.terraform/
+.databricks/bundle/*/terraform/plan
+
+# Local scratch files
+.plans/
+_backup-before-cleaning.bundle
+_README.backup.md
