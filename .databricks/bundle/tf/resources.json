@@ -2,7 +2,7 @@
  "state_version": 3,
  "cli_version": "1.26.0",
  "lineage": "c4610367-7e0b-b4f1-bbd1-8c041be831bc",
- "serial": 9,
+ "serial": 10,
  "state": {
   "resources.jobs.my_job": {
    "__id__": "295721443718387",
